@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Felices 20 meses</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Manrope:wght@400;500;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="background-glow background-glow-one"></div>
+    <div class="background-glow background-glow-two"></div>
+
+    <main class="app-shell">
+      <section class="screen screen-active" data-screen="0">
+        <div class="screen-copy">
+          <h1>Por los momentos vividos</h1>
+          <p class="lead">
+            Una coleccion de recuerdos que me siguen haciendo sonreir como el
+            primer dia.
+          </p>
+        </div>
+        <div class="polaroid-grid" id="memories-grid"></div>
+        <button class="primary-button next-button" type="button">
+          Siguiente
+        </button>
+      </section>
+
+      <section class="screen" data-screen="1">
+        <div class="screen-copy">
+          <p class="eyebrow">Lo que viene</p>
+          <h2>Por los que nos quedan por vivir</h2>
+          <p class="lead">
+            Todo lo bonito que falta por construir contigo tambien merece su
+            hueco.
+          </p>
+        </div>
+        <div class="polaroid-grid" id="future-grid"></div>
+        <p class="future-closing">Y muchas más</p>
+        <button class="primary-button next-button" type="button">
+          Siguiente
+        </button>
+      </section>
+
+      <section class="screen question-screen" data-screen="2">
+        <div class="question-card">
+          <p class="eyebrow">Solo una cosita</p>
+          <h2>Pero solo para confirmar, quieres pasar el resto de tu vida conmigo</h2>
+          <div class="button-row">
+            <button class="primary-button next-button" type="button">Si</button>
+            <button class="secondary-button next-button" type="button">NO</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="screen question-screen" data-screen="3">
+        <div class="question-card">
+          <p class="eyebrow">Respuesta incorrecta</p>
+          <h2>Como que no :(</h2>
+          <div class="button-row">
+            <button
+              class="primary-button primary-button-large next-button"
+              type="button"
+            >
+              He dicho que si
+            </button>
+            <button class="secondary-button next-button" type="button">
+              No es no
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section class="screen question-screen" data-screen="4">
+        <div class="question-card evasive-stage">
+          <p class="eyebrow">Ultima oportunidad</p>
+          <h2>Pues me enfado y no respiro</h2>
+          <div class="evasive-area" id="evasive-area">
+            <button
+              class="primary-button primary-button-large next-button"
+              type="button"
+            >
+              Ay mi osito
+            </button>
+            <button
+              class="secondary-button evasive-button"
+              id="evasive-button"
+              type="button"
+            >
+              Que no quiero pesado
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section class="screen question-screen" data-screen="5">
+        <div class="question-card">
+          <p class="eyebrow">Era inevitable</p>
+          <h2>No tienes eleccion, sabes mucho...</h2>
+          <button class="primary-button giant-button next-button" type="button">
+            Tu ganas, soy toda tuya
+          </button>
+        </div>
+      </section>
+
+      <section class="screen final-screen" data-screen="6">
+        <div class="question-card final-card">
+          <p class="eyebrow">Fin</p>
+          <p class="final-line">Que tonto soy jajaja</p>
+          <p class="final-line">Bueno amor pues eso</p>
+          <h2 class="final-highlight">Felices 20 meses juntos mi vida</h2>
+        </div>
+      </section>
+    </main>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
